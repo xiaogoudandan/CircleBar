@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#Fafafa"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/circle_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:background="@color/themeColor"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="56px"
+            android:layout_gravity="center"
+            android:textSize="40px"
+            android:text="财富体验"
+            android:textColor="#ffffff"/>
+    </android.support.v7.widget.Toolbar>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1">
+
+          <TextView
+              android:id="@+id/experiment_context"
+              android:layout_width="564px"
+              android:layout_height="50dp"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginBottom="50dp"
+              android:text="您适合投资低风险、较低风险、中等风险、较
+高风险的金融产品"
+              android:textColor="#676767" />
+
+          <TextView
+              android:id="@+id/textView3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="54dp"
+              android:text="您的投资类型"
+              android:textColor="#676767" />
+
+          <TextView
+              android:id="@+id/experiment_type"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBottom="@+id/experiment_context"
+              android:layout_centerHorizontal="true"
+              android:layout_marginBottom="50dp"
+              android:text="激进投资型"
+              android:textColor="#49a4e2"
+              android:textSize="56px" />
+
+          <com.example.william_zhang.circlebar.View.MyCircleBar
+              android:id="@+id/CircleBar"
+              android:layout_marginTop="20dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/textView3"
+              android:layout_centerHorizontal="true"/>
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="5">
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true"
+              android:orientation="vertical">
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:orientation="horizontal">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="风险评测到期日期为"
+                      android:textSize="28px"/>
+                  <TextView
+                      android:id="@+id/experiment_time"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="2008.01.02"
+                      android:textSize="28px"
+                      android:textColor="@color/themeColor"/>
+              </LinearLayout>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="请在此日期前再次参加风险评测 "
+                  android:textSize="28px"/>
+          </LinearLayout>
+      </RelativeLayout>
+  </LinearLayout>
+</LinearLayout>

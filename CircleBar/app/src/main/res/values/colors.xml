@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="arcButtomColor">#cdcdcd</color>
+    <color name="arcBodyColor">#87CEFF</color>
+    <color name="arcLineColor">#7EC0EE</color>
+    <color name="themeColor">#F24957</color>
+    <color name="circleColor">#49A4E2</color>
+    <color name="baise">#ffffff</color>
+    <color name="line">#cdcdcd</color>
+    <color name="black">#000000</color>
+    <color name="ddd">#ff0000</color>
+</resources>
